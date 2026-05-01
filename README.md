@@ -2,7 +2,11 @@
 
 In order to run the webapp you need Node.js 22+ LTS installed on your system.
 
-Clone the repository and run the commands below.
+Clone the repository and then continue with the commands below:
+
+```bash
+git clone git@github.com:CCXLV/giorgi_merebashvili_helfy_task.git
+```
 
 ## Install dependencies
 
