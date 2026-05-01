@@ -55,6 +55,8 @@ PATCH - /api/tasks/:id/toggle - Toggle `complete` status of the task
 
 - Backend - ~40 minutes
 - Frontend with styling - ~2.4hours
+- Polishing the code - ~20 minutes
+- Testing - ~25 minutes
 
 # Screenshot
 
