@@ -13,7 +13,7 @@ git clone git@github.com:CCXLV/giorgi_merebashvili_helfy_task.git
 Run this command at the root directory:
 
 ```bash
-cd backend && npm i && cd ../frontend && npm i
+cd backend && npm i && cd ../frontend && npm i && cd ../
 ```
 
 ## Run the servers
