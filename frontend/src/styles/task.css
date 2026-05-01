@@ -1,0 +1,159 @@
+.task-section {
+  margin-top: 16px;
+}
+
+.task-filter {
+  margin-bottom: 4px;
+}
+
+.task-tools {
+  display: flex;
+  gap: 8px;
+}
+
+.task-search-input {
+  flex: 1;
+}
+
+.task-sort-select {
+  min-width: 130px;
+}
+
+.task-filter-button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.task-filter-button.active {
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.task-carousel {
+  width: calc(100% - 24px);
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 12px;
+}
+
+.task-carousel-track {
+  display: flex;
+  width: max-content;
+  animation-name: task-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.task-carousel-group {
+  display: flex;
+  gap: 12px;
+  padding-right: 12px;
+}
+
+.task-carousel:hover .task-carousel-track {
+  animation-play-state: paused;
+}
+
+.task-slide {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.task-item {
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: var(--bg);
+}
+
+.task-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-item-head h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.task-item p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.task-item-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.task-item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-action-button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-h);
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.task-action-button.danger {
+  border-color: #e5b7b7;
+  color: #b75454;
+}
+
+.task-priority {
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+}
+
+.task-priority.low {
+  color: #2a8a57;
+}
+
+.task-priority.medium {
+  color: #bc7b16;
+}
+
+.task-priority.high {
+  color: #be3d3d;
+}
+
+.task-empty {
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: var(--surface);
+}
+
+@media (max-width: 768px) {
+  .task-tools {
+    flex-direction: column;
+  }
+}
+@keyframes task-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

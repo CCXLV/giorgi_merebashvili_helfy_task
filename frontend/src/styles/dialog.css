@@ -1,0 +1,25 @@
+.dialog-base {
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 400px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.dialog-base::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dialog-content h2 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-h);
+}
